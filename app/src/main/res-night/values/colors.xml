@@ -3,4 +3,5 @@
     <color name="colorPrimary_night">#ff2e2e2e</color>
     <color name="colorPrimaryDark_night">#aaa</color>
     <color name="colorAccent_night">#000000</color>
+    <color name="colorBg_night">#FF00FF</color>
 </resources>

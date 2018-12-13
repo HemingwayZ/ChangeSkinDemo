@@ -43,13 +43,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun doChange() {
-        isNightTheme = !isNightTheme
+
         if (isNightTheme) {
             SkinCompatManager.getInstance().loadSkin("night", SkinLoadListener(), SkinCompatManager.SKIN_LOADER_STRATEGY_BUILD_IN)
         } else {
             SkinCompatManager.getInstance().restoreDefaultTheme()
         }
         Toast.makeText(this, if(isNightTheme)"Night" else "Normal", Toast.LENGTH_SHORT).show()
+        isNightTheme = !isNightTheme
     }
 
     private fun change(): String {
